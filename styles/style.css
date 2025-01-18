@@ -1,0 +1,268 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #0078d7;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1.5rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    text-decoration: underline;
+    color: #ffcb05;
+}
+
+/* Main Section Styles */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Hero Section Styles for Index Page */
+.hero {
+    background: linear-gradient(135deg, #0078d7, #005bb5);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .cta-button {
+    background-color: #ffcb05;
+    color: #333;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button a {
+    color: #333;
+    text-decoration: none;
+}
+
+.hero .cta-button:hover {
+    background-color: #ffb300;
+}
+
+/* Features Section Styles for Index Page */
+.features {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: #005bb5;
+    margin-bottom: 1rem;
+}
+
+.features ul {
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+    max-width: 600px;
+}
+
+.features ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Image Slider Section Styles for Index Page */
+.image-slider {
+    position: relative;
+    max-width: 600px;
+    margin: 3rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-img {
+    width: 100%;
+    display: block;
+}
+
+.image-slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.image-slider button.prev {
+    left: 10px;
+}
+
+.image-slider button.next {
+    right: 10px;
+}
+
+.image-slider button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Weather Page Styles */
+#weather-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.weather-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card h2 {
+    font-size: 1.8rem;
+    color: #005bb5;
+}
+
+.weather-card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contact Page Styles */
+.contact-form-section {
+    background-color: white;
+    padding: 3rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #005bb5;
+}
+
+.contact-form-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.contact-form-section label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+    text-align: left;
+    display: block;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form-section input:focus,
+.contact-form-section textarea:focus {
+    border-color: #0078d7;
+    outline: none;
+}
+
+.contact-form-section textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form-section .cta-button {
+    background-color: #ffcb05;
+    color: #333;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-section .cta-button:hover {
+    background-color: #ffb300;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    margin-top: 3rem;
+}

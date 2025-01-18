@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/weather.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="weather.html" class="active">Weather</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Weather Updates</h1>
+            <p>Real-time weather information for selected cities.</p>
+
+            <div id="weather-container">
+                <!-- București -->
+                <div id="city-bucharest" class="weather-card">
+                    <h2>Bucharest</h2>
+                    <div id="weather-result-bucharest">Loading...</div>
+                </div>
+
+                <!-- London -->
+                <div id="city-london" class="weather-card">
+                    <h2>London</h2>
+                    <div id="weather-result-london">Loading...</div>
+                </div>
+
+                <!-- New York -->
+                <div id="city-newyork" class="weather-card">
+                    <h2>New York</h2>
+                    <div id="weather-result-newyork">Loading...</div>
+                </div>
+
+                <!-- Tokyo -->
+                <div id="city-tokyo" class="weather-card">
+                    <h2>Tokyo</h2>
+                    <div id="weather-result-tokyo">Loading...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Weather App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
